@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>Poor Man's Chord Typing</title>
+</head>
+<body style="background-color: black;">
+    <div>
+        <textarea id="output" placeholder="Finished text will appear here..." rows=20 cols=50></textarea>
+    </div>
+
+    <br>
+    <br>
+
+    <div style="display: table-row;">
+
+        <div style="display: table-cell;">
+            <textarea id="input" placeholder="Start keyboard smashing" rows=20 cols=50 onkeyup="javascript:change()"></textarea>
+        </div>
+
+        <div style="display: table-cell;">
+            <select size="9" id="select" multiple="multiple">
+                <option id="option1">1.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option id="option2">2.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option id="option3">3.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option id="option4">4.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option id="option5">5.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option id="option6">6.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option id="option7">7.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option id="option8">8.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                <option id="option9">9.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div>
+        <input id="url" type="text" placeholder="new-line separated text file dictionary URL" value="https://raw.githubusercontent.com/first20hours/google-10000-english/master/google-10000-english-usa.txt"></input>
+        <button onclick="javascript:update(true)">Get</button>
+    </div>
+</body>
+
+
+
+<script src="/test.js"></script>
